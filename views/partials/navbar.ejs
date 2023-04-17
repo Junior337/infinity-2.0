@@ -1,0 +1,25 @@
+<header>
+    <a href="/home.html" class="logo"><i class="fas fa-infinity"></i>Infinity </a>
+    <nav class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="./page/animes.ejs">Animes</a>
+        <a href="./src/Popular.html">Popular</a>
+        <a href="/src/Sign-Up.html">Sign Up</a>
+    </nav>
+    <div class="icons">
+        <div class="search" ,class="active" id="search-bar">
+            <input class="search-txt" type="text" placeholder="Search...">
+            <button class="submit"><i class="fas fa-search" id="search-icon"></i></button>
+        </div>
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a href="#" class="fas fa-heart"></a>
+    </div>
+    <script>
+        var searchBox = document.getElementById("search-bar");
+        var Icon = document.getElementsByClassName("submit")[0];
+        Icon.onclick = function () {
+            searchBox.classList.toggle("active");
+        }
+
+    </script>
+</header>
